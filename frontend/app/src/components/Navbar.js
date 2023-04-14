@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ onTabClick }) => {
     return (
         <nav className="navbar">
-            <div className="navbar-brand">ThoughtProvokingQuotes</div>
+            <div className="navbar-brand">Wisdomark</div>
             <div className="navbar-menu">
-                <a href="/profile">Profile</a>
-                <a href="/settings">Settings</a>
+                <button onClick={() => onTabClick('discussionGroups')}>Discussion Groups</button>
+                <button onClick={() => onTabClick('offlineActivities')}>Offline Activities</button>
+                <button onClick={() => onTabClick('timeManagement')}>Time Management</button>
             </div>
         </nav>
     );
