@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.js';
 import QuoteFeed from './components/QuoteFeed';
 import DiscussionGroups from './components/DiscussionGroups';
 import OfflineActivities from './components/OfflineActivities';
